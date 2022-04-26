@@ -12,12 +12,9 @@ print(type(height))
 # Float
 weight = 66.6
 print(type(weight))
+
 # Integers
 # Run distance in m
-
-from xml.etree.ElementTree import tostring
-
-
 run1_dist = 1400
 run2_dist = 1800
 

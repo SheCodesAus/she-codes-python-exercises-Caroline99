@@ -1,6 +1,3 @@
-#from ipaddress import ip_address
-
-
 name = input("What is your name? ")
 hobby = input("Do you have a favourite hobby? ")
 print(type(name))
