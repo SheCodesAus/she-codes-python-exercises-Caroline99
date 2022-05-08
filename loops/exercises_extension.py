@@ -19,7 +19,7 @@ print()
 print("====Izzy's Food Emporium====")
 for i in range(6):
     print(f"{groceries[i][0]}{' '*(18 - len(groceries[i][0]))}${totals[i]:.2f}")
-print("============================")
+print("="*28)
 print(f"{' '*18}${sum(totals):.2f}")
 
 print()
