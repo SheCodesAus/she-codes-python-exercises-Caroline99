@@ -34,10 +34,8 @@ guess = int(input("Guess the number: "))
 while guess != target:
     if guess < target:
         print("Too low!")
-        # guess = int(input("Guess the number: "))
     else:
         print("Too high!")
-        # guess = int(input("Guess the number: "))
     guess = int(input("Guess the number: "))
 print("Correct!")
 
