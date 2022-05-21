@@ -1,3 +1,5 @@
+print()
+
 prices = {
     "Baby Spinach": 2.78,
     "Hot Chocolate": 3.70,
@@ -24,3 +26,16 @@ quantity = {
 #     "Carrots": 8,
 #     "Oranges": 5
 # }
+
+num_items = 0
+total = 0
+
+for item in quantity:
+    num_items += quantity[item]
+    total += quantity[item] * prices[item]
+    print(f"{quantity[item]} {item} @ ${prices[item]} = ${quantity[item] * prices[item]:.2f}")
+
+print()
+print(f"Total number of items: {num_items}")
+print(f"Total price = ${total:.2f}")
+print()

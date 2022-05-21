@@ -1,3 +1,5 @@
+print()
+
 names = [
     "Maddy", "Bel", "Elnaz", "Gia", "Izzy",
     "Joy", "Katie", "Maddie", "Tash", "Nic",
@@ -13,3 +15,13 @@ names = [
 #     "Abby", "Sarah", "Teagen", "Abby", "Abby",
 #     "Maddie", "Miranda", "Rosie"
 # ]
+
+name_counts = {}.fromkeys(names, 0)
+
+for name in names:
+    name_counts[name] += 1
+
+for name, count in name_counts.items():
+    print(f"{name}: {count}")
+
+print()
