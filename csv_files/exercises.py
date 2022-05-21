@@ -4,7 +4,7 @@ print("Q1: Output colour data from colours_20_simple.csv")
 print()
 
 colours = []
-with open("colours_20_simple.csv") as csv_file:
+with open("csv_files/colours_20_simple.csv") as csv_file:
     reader = csv.reader(csv_file)
     for line in reader:
         colours.append(line)
@@ -20,7 +20,7 @@ print()
 
 # Use this if not running with Q1
 # colours = []
-# with open("colours_20_simple.csv") as csv_file:
+# with open("csv_files/colours_20_simple.csv") as csv_file:
 #     reader = csv.reader(csv_file)
 #     for line in reader:
 #         colours.append(line)
@@ -35,7 +35,7 @@ print("Q3: Reformat colours from colours_20.csv")
 print()
 
 intl_colours = []
-with open("colours_20.csv") as csv_file:
+with open("csv_files/colours_20.csv") as csv_file:
     reader = csv.reader(csv_file)
     for line in reader:
         intl_colours.append(line)
@@ -69,11 +69,11 @@ while choice not in ["1", "2", "3"]:
     choice = input("Please select 1, 2 or 3: ")
 
 if choice == "1":
-    f = "colours_20_simple.csv"
+    f = "csv_files/colours_20_simple.csv"
 elif choice == "2":
-    f = "colours_20.csv"    
+    f = "csv_files/colours_20.csv"    
 elif choice == "3":
-    f = "colours_213.csv"
+    f = "csv_files/colours_213.csv"
 
 colours = []
 with open(f) as csv_file:
@@ -117,7 +117,7 @@ print("Q5: Galaxies - find min and max velocities")
 print()
 
 galaxies = []
-with open("galaxies.csv") as csv_file:
+with open("csv_files/galaxies.csv") as csv_file:
     reader = csv.reader(csv_file)
     for line in reader:
         galaxies.append(line)
